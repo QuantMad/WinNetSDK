@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D263618-E867-421E-8C38-57EB174F3B2C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinNetSDK</RootNamespace>
+    <AssemblyName>WinNetSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CppLibWrapper.cs" />
+    <Compile Include="Class\SDKTypeLen.cs" />
+    <Compile Include="Class\SDK_TYPE.cs" />
+    <Compile Include="Class\SocketStyle.cs" />
+    <Compile Include="Enum\MediaFileType.cs" />
+    <Compile Include="Enum\PTZControlType.cs" />
+    <Compile Include="Enum\SDKAlarmFucntionTypes.cs" />
+    <Compile Include="Enum\SDKCommTypes.cs" />
+    <Compile Include="Enum\SDKConfigType.cs" />
+    <Compile Include="Enum\SDKDeviceType.cs" />
+    <Compile Include="Enum\SDKEncodeFunctionTypes.cs" />
+    <Compile Include="Enum\SDKEventCodeTypes.cs" />
+    <Compile Include="Enum\SDKInPutMethod.cs" />
+    <Compile Include="Enum\SDKLoalPlayAction.cs" />
+    <Compile Include="Enum\SDKMobileCar.cs" />
+    <Compile Include="Enum\SDKNetServerTypes.cs" />
+    <Compile Include="Enum\SDKOtherFunction.cs" />
+    <Compile Include="Enum\SDKPreviewTypes.cs" />
+    <Compile Include="Enum\SDKReturnCode.cs" />
+    <Compile Include="Enum\SDKRSSISignal.cs" />
+    <Compile Include="Enum\SDKTipShow.cs" />
+    <Compile Include="Enum\SearchModeType.cs" />
+    <Compile Include="Enum\SerialType.cs" />
+    <Compile Include="Struct\ConfigIPAddress.cs" />
+    <Compile Include="Struct\ConfModifyUser.cs" />
+    <Compile Include="Struct\DDNSInfo.cs" />
+    <Compile Include="Struct\DSTPoint.cs" />
+    <Compile Include="Struct\H264DeviceInfo.cs" />
+    <Compile Include="Struct\H264DVRClientInfo.cs" />
+    <Compile Include="Struct\H264DVRFileData.cs" />
+    <Compile Include="Struct\H264DVRFindInfo.cs" />
+    <Compile Include="Struct\H264DVRTime.cs" />
+    <Compile Include="Struct\OPRRight.cs" />
+    <Compile Include="Struct\PacketInfoEX.cs" />
+    <Compile Include="Struct\SDKAlarmInfo.cs" />
+    <Compile Include="Struct\SDKAllCameraParam.cs" />
+    <Compile Include="Struct\SDKCameraParam.cs" />
+    <Compile Include="Struct\SDKConfigNetCommon.cs" />
+    <Compile Include="Struct\SDKConfigNetCommonV2.cs" />
+    <Compile Include="Struct\SDKConfigNormal.cs" />
+    <Compile Include="Struct\SDKConfigVideoColor.cs" />
+    <Compile Include="Struct\SDKExposureCfg.cs" />
+    <Compile Include="Struct\SDKGainCfg.cs" />
+    <Compile Include="Struct\SDKHardDiskInfo.cs" />
+    <Compile Include="Struct\SDKNetAlarmInfo.cs" />
+    <Compile Include="Struct\SDKNetDHCPConfig.cs" />
+    <Compile Include="Struct\SDKNetDHCPConfigAll.cs" />
+    <Compile Include="Struct\SDKNetKeyBoardData.cs" />
+    <Compile Include="Struct\SDKNetNTPConfig.cs" />
+    <Compile Include="Struct\SDKNetWifiConfig.cs" />
+    <Compile Include="Struct\SDKNetWifiDevice.cs" />
+    <Compile Include="Struct\SDKNetWifiDeviceAll.cs" />
+    <Compile Include="Struct\SDKOemGetInfo.cs" />
+    <Compile Include="Struct\SDKRemoteServerConfig.cs" />
+    <Compile Include="Struct\SDKSystemFunction.cs" />
+    <Compile Include="Struct\SDKSystemTime.cs" />
+    <Compile Include="Struct\SDKTimeSection.cs" />
+    <Compile Include="Struct\SDKTimeZone.cs" />
+    <Compile Include="Struct\SDKUUID.cs" />
+    <Compile Include="Struct\SDKVideoColor.cs" />
+    <Compile Include="Struct\SDKVideoColorParam.cs" />
+    <Compile Include="Struct\SearchMode.cs" />
+    <Compile Include="Struct\TransComChannel.cs" />
+    <Compile Include="Struct\UserGroupInfo.cs" />
+    <Compile Include="Struct\UserInfo.cs" />
+    <Compile Include="Struct\UserManageInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,6 @@
+C:\Users\Quantmad\Desktop\WinNetSDK\obj\Debug\WinNetSDK.csproj.CoreCompileInputs.cache
+C:\Users\Quantmad\Desktop\WinNetSDK\bin\Debug\WinNetSDK.dll
+C:\Users\Quantmad\Desktop\WinNetSDK\bin\Debug\WinNetSDK.pdb
+C:\Users\Quantmad\Desktop\WinNetSDK\obj\Debug\WinNetSDK.csproj.AssemblyReference.cache
+C:\Users\Quantmad\Desktop\WinNetSDK\obj\Debug\WinNetSDK.dll
+C:\Users\Quantmad\Desktop\WinNetSDK\obj\Debug\WinNetSDK.pdb
